@@ -76,9 +76,6 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<audio controls autoplay loop>
-							<source src="musik.mp3" type="audio/mpeg">
-						</audio>
 					</ul>
 				</div>
 			</div>
@@ -254,6 +251,16 @@
         day: d.getDate(),
         enableUtc: false
     });
+</script>
+
+<audio id="myAudio">
+	<source src="musik.mp3" type="audio/mpeg">
+</audio>
+<script>
+    window.onload = function() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+    }
 </script>
 
 	</body>
